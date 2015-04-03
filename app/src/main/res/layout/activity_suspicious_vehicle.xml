@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hantenks.vms.SuspiciousVehicle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Suspicious Vehicle Reporting"
+                android:id="@+id/suspiciousHeading"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="40dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Please Enter Your Name"
+                android:ems="10"
+                android:id="@+id/suspiciousName"
+                android:layout_below="@+id/suspiciousHeading"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email-address"
+                android:ems="10"
+                android:id="@+id/suspiciousEmail"
+                android:layout_below="@+id/suspiciousName"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:hint="Time"
+                android:ems="10"
+                android:id="@+id/suspiciousTime"
+                android:layout_below="@+id/suspiciousDate"
+                android:layout_alignLeft="@+id/suspiciousDate"
+                android:layout_alignStart="@+id/suspiciousDate" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/suspiciousDetails" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/suspiciousDetails"
+                android:hint="Details of the suspicious eg. What's suspicious about it, location, suspects, etc"
+                android:layout_gravity="center_vertical"
+                android:scrollbars="vertical"
+                android:layout_below="@+id/suspiciousVehicleDetails"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Date"
+                android:ems="10"
+                android:id="@+id/suspiciousDate"
+                android:layout_below="@+id/suspiciousPhone"
+                android:layout_alignLeft="@+id/suspiciousPhone"
+                android:layout_alignStart="@+id/suspiciousPhone" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Phone Number"
+                android:ems="10"
+                android:id="@+id/suspiciousPhone"
+                android:layout_below="@+id/suspiciousEmail"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/suspiciousTime"
+                android:hint="Details of vehicle eg. car/bike, model, registration plates, etc "
+                android:scrollbars="vertical"
+                android:id="@+id/suspiciousVehicleDetails"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

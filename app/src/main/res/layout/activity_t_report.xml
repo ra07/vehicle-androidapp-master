@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hantenks.vms.t_report">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/theft"
+        android:id="@+id/theftHeading"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Please Enter Your Name"
+        android:ems="10"
+        android:id="@+id/theftName"
+        android:layout_below="@+id/theftHeading"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email-address"
+        android:ems="10"
+        android:id="@+id/theftEmail"
+        android:layout_below="@+id/theftName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint="Time of theft"
+        android:ems="10"
+        android:id="@+id/theftTime"
+        android:layout_below="@+id/theftDate"
+        android:layout_alignLeft="@+id/theftDate"
+        android:layout_alignStart="@+id/theftDate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/theftDetails" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/theftDetails"
+            android:hint="Details of Theft eg. Location, suspects, etc"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/theftVehicleDetails"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Date of theft"
+        android:ems="10"
+        android:id="@+id/theftDate"
+        android:layout_below="@+id/theftPhone"
+        android:layout_alignLeft="@+id/theftPhone"
+        android:layout_alignStart="@+id/theftPhone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:ems="10"
+        android:id="@+id/theftPhone"
+        android:layout_below="@+id/theftEmail"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/theftTime"
+        android:hint="Details of vehicle eg. car/bike,model,registration plates, etc "
+        android:scrollbars="vertical"
+        android:id="@+id/theftVehicleDetails"/>
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
+
