@@ -14,6 +14,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/theftHeadingImage"
+            android:layout_above="@+id/theftName"
+            android:visibility="visible"
+            android:alpha="0.35"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="40dp"
+            android:background="#6600CC"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +37,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -33,79 +48,80 @@
         android:hint="Please Enter Your Name"
         android:ems="10"
         android:id="@+id/theftName"
+        android:layout_marginBottom="10dp"
         android:layout_below="@+id/theftHeading"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Email-address"
-        android:ems="10"
-        android:id="@+id/theftEmail"
-        android:layout_below="@+id/theftName"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:hint="Time of theft"
-        android:ems="10"
-        android:id="@+id/theftTime"
-        android:layout_below="@+id/theftDate"
-        android:layout_alignLeft="@+id/theftDate"
-        android:layout_alignStart="@+id/theftDate" />
-
-    <Button
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/vehicleTypes"
+            android:prompt="@string/vehicleTypePrompt"
+            android:dropDownWidth="200dp"
+            android:id="@+id/theftVehicleType"
+            android:layout_below="@+id/theftName"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Vehicle Model"
+            android:ems="10"
+            android:id="@+id/theftVehicleModel"
+            android:layout_below="@+id/theftVehicleType"
+            android:layout_alignLeft="@+id/theftName"
+            android:layout_alignStart="@+id/theftName" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Vehicle number"
+            android:ems="10"
+            android:layout_marginBottom="18dp"
+            android:id="@+id/theftVehicleNumber"
+            android:layout_below="@+id/theftVehicleModel"
+            android:layout_alignLeft="@+id/theftName"
+            android:layout_alignStart="@+id/theftName" />
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:id="@+id/button"
+        android:id="@+id/theftButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/theftDetails" />
+        android:layout_below="@+id/theftRemarks" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:id="@+id/theftDetails"
+            android:id="@+id/theftRemarks"
             android:hint="Details of Theft eg. Location, suspects, etc"
             android:layout_gravity="center_vertical"
             android:scrollbars="vertical"
-            android:layout_below="@+id/theftVehicleDetails"
+            android:layout_below="@+id/theftTime"
             android:layout_centerHorizontal="true" />
 
-        <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:hint="Date of theft"
-        android:ems="10"
-        android:id="@+id/theftDate"
-        android:layout_below="@+id/theftPhone"
-        android:layout_alignLeft="@+id/theftPhone"
-        android:layout_alignStart="@+id/theftPhone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please Enter the approximate time of Theft below:"
+            android:id="@+id/theftTimePrompt"
+            android:layout_below="@+id/theftVehicleNumber"
+ />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:hint="Phone Number"
-        android:ems="10"
-        android:id="@+id/theftPhone"
-        android:layout_below="@+id/theftEmail"
-        android:layout_centerHorizontal="true" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_below="@+id/theftTime"
-        android:hint="Details of vehicle eg. car/bike,model,registration plates, etc "
-        android:scrollbars="vertical"
-        android:id="@+id/theftVehicleDetails"/>
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="Time of theft"
+            android:ems="10"
+            android:id="@+id/theftTime"
+            android:layout_below="@+id/theftTimePrompt"
+            android:layout_centerHorizontal="true" />
 
-
-</RelativeLayout>
+    </RelativeLayout>
 </ScrollView>
 </RelativeLayout>
 

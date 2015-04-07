@@ -12,14 +12,37 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/loginHeadingImage"
+                android:layout_above="@+id/loginPrompt"
+                android:visibility="visible"
+                android:alpha="0.35"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#6600CC"
+                android:layout_marginBottom="30dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please Enter Your Login Credentials Below:"
-        android:layout_alignParentTop="true"
-        android:id="@+id/registerHeading"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vehicle Management and Security"
+        android:id="@+id/loginHeading"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginHeading"
+                android:text="Please fill in your Login Credentials"
+                android:id="@+id/loginPrompt"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,12 +50,12 @@
         android:hint="Enter Login e-mail id"
         android:ems="10"
         android:id="@+id/loginEmail"
-        android:layout_below="@+id/registerHeading"
+        android:layout_below="@+id/loginPrompt"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="false"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -50,11 +73,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submit"
+        android:text="Login"
         android:id="@+id/loginSubmit"
         android:layout_below="@+id/radioGroup"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp" />
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="25dp"/>
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -96,7 +120,8 @@
                 android:id="@+id/loginBusButton"
                 android:layout_below="@+id/loginSubmit"
                 android:layout_marginTop="40dp"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:background="@color/button_material_light" />
             <Button
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -104,7 +129,28 @@
                 android:id="@+id/loginNavigationButton"
                 android:layout_below="@+id/loginBusButton"
                 android:layout_marginTop="20dp"
-                android:layout_centerHorizontal="true" />
-</RelativeLayout>
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/button_material_light" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/loginBottomImageBar1"
+                android:layout_below="@id/loginSubmit"
+                android:layout_marginBottom="2dp"
+                android:background="#006B24"
+                android:adjustViewBounds="false"
+                android:alpha="0.4" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/loginBottomImageBar2"
+                android:layout_below="@+id/loginBottomImageBar1"
+                android:background="#006B24"
+                android:adjustViewBounds="false"
+                android:alpha="0.4" />
+
+        </RelativeLayout>
         </ScrollView>
     </RelativeLayout>

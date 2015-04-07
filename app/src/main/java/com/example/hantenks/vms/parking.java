@@ -1,9 +1,18 @@
 package com.example.hantenks.vms;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PointF;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 
 
 public class parking extends ActionBarActivity {

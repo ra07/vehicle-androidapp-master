@@ -4,9 +4,10 @@
     <string name="title_section1">Route Navigation</string>
     <string name="title_section2">Theft Reporting</string>
     <string name="title_section3">Suspicious Vehicle Reporting</string>
-    <string name="title_section4">Parking Reservation</string>
+    <string name="title_section4">Parking Details</string>
     <string name="title_section5">Bus Timings</string>
     <string name="theft">Welcome to VMS Theft Reporting</string>
+    <string name="vehicleTypePrompt">Choose Source....</string>
 <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
         AIzaSyBSd_Urw3jRKv1XWYkciN4yEUTLCwIrBfo
     </string>
@@ -18,6 +19,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_navigation">Navigation</string>
 
+    <string name="spinner_src">Choose Source....</string>
+    <string name="spinner_dest">Choose Destination....</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_t_report">Theft Report</string>
     <string name="title_activity_parking">Parking Reservation</string>
@@ -27,17 +30,22 @@
     <string name="submit">Submit</string>
     <string name="members">Student/Faculty/Staff</string>
     <string name="security">Security Personnel</string>
-    <string name="admin">Admin</string>
+    <string name="admin">Security Admin</string>
     <string name="title_activity_suspicious_vehicle">SuspiciousVehicle</string>
     <string name="title_activity_navigation1">Route Navigation</string>
 
     <string-array name="location1">
         <item>Choose source...</item>
+
+        ////Gates//////
         <item>Main Gate</item>
         <item>KV Gate</item>
         <item>Faculty Gate</item>
+
+        /////Hostels///////
         <item>Barak</item>
         <item>Brahmaputra</item>
+        <item>Dhansiri</item>
         <item>Dibang</item>
         <item>Dihing</item>
         <item>Kameng</item>
@@ -47,22 +55,53 @@
         <item>Siang</item>
         <item>Subansiri</item>
         <item>Umiam</item>
+
         <item>Academic complex Core 1</item>
         <item>Academic complex Core 2</item>
         <item>Academic complex Core 3</item>
         <item>Academic complex Core 4</item>
-        <item>Central Library</item>
         <item>Auditorium</item>
-        <item></item>
+        <item>Central Library</item>
+        <item>Faculty Community Hall</item>
+        <item>Food Court</item>
+        <item>Gym and Badminton Court</item>
+        <item>Hospital</item>
+        <item>IRCTC Canteen</item>
+        <item>KV School</item>
+        <item>Manas Community Hall</item>
+        <item>Market Compex</item>
+        <item>Married Scholars</item>
+        <item>Mechanical Workshop</item>
+        <item>New Sac Extension</item>
+        <item>Technology Park</item>
+
+        //////Residence/////
+        <item>A type Residence</item>
+        <item>B type Residence</item>
+        <item>C type Residence</item>
+        <item>D type Residence</item>
+        <item>E type Residence</item>
+        <item>F type Residence</item>
+
+        /////Sports///////
+        <item>Cricket Field</item>
+        <item>Hockey Field</item>
+        <item>Tennis Court</item>
+        <item>Swimming Pool</item>
+
     </string-array>
 
     <string-array name="location2">
         <item>Choose destination...</item>
+        ////Gates//////
         <item>Main Gate</item>
         <item>KV Gate</item>
         <item>Faculty Gate</item>
+
+        /////Hostels///////
         <item>Barak</item>
         <item>Brahmaputra</item>
+        <item>Dhansiri</item>
         <item>Dibang</item>
         <item>Dihing</item>
         <item>Kameng</item>
@@ -72,12 +111,105 @@
         <item>Siang</item>
         <item>Subansiri</item>
         <item>Umiam</item>
+
         <item>Academic complex Core 1</item>
         <item>Academic complex Core 2</item>
         <item>Academic complex Core 3</item>
         <item>Academic complex Core 4</item>
-        <item>Central Library</item>
         <item>Auditorium</item>
-        <item></item>
+        <item>Central Library</item>
+        <item>Faculty Community Hall</item>
+        <item>Food Court</item>
+        <item>Gym and Badminton Court</item>
+        <item>Hospital</item>
+        <item>IRCTC Canteen</item>
+        <item>KV School</item>
+        <item>Manas Community Hall</item>
+        <item>Market Compex</item>
+        <item>Married Scholars</item>
+        <item>Mechanical Workshop</item>
+        <item>New Sac Extension</item>
+        <item>Technology Park</item>
+
+        //////Residence/////
+        <item>A type Residence</item>
+        <item>B type Residence</item>
+        <item>C type Residence</item>
+        <item>D type Residence</item>
+        <item>E type Residence</item>
+        <item>F type Residence</item>
+
+        /////Sports///////
+        <item>Cricket Field</item>
+        <item>Hockey Field</item>
+        <item>Tennis Court</item>
+        <item>Swimming Pool</item>
     </string-array>
+    <string-array name="vehicleTypes">
+    <item>Choose Vehicle Type...</item>
+
+    ////Gates//////
+    <item>Bicycle</item>
+        <item>Bike</item>
+        <item>Car</item>
+        <item>Truck</item>
+        <item>Courier</item>
+        <item>Auto</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="parkingSpots">
+        <item>Please Select Your Parking Spot</item>
+        ////Gates//////
+        <item>Main Gate</item>
+        <item>KV Gate</item>
+        <item>Faculty Gate</item>
+
+        /////Hostels///////
+        <item>Barak</item>
+        <item>Brahmaputra</item>
+        <item>Dhansiri</item>
+        <item>Dibang</item>
+        <item>Dihing</item>
+        <item>Kameng</item>
+        <item>Kapili</item>
+        <item>Lohit</item>
+        <item>Manas</item>
+        <item>Siang</item>
+        <item>Subansiri</item>
+        <item>Umiam</item>
+
+        <item>Academic complex Core 1</item>
+        <item>Academic complex Core 2</item>
+        <item>Academic complex Core 3</item>
+        <item>Academic complex Core 4</item>
+        <item>Auditorium</item>
+        <item>Central Library</item>
+        <item>Faculty Community Hall</item>
+        <item>Food Court</item>
+        <item>Gym and Badminton Court</item>
+        <item>Hospital</item>
+        <item>IRCTC Canteen</item>
+        <item>KV School</item>
+        <item>Manas Community Hall</item>
+        <item>Market Compex</item>
+        <item>Married Scholars</item>
+        <item>Mechanical Workshop</item>
+        <item>New Sac Extension</item>
+        <item>Technology Park</item>
+
+        //////Residence/////
+        <item>A type Residence</item>
+        <item>B type Residence</item>
+        <item>C type Residence</item>
+        <item>D type Residence</item>
+        <item>E type Residence</item>
+        <item>F type Residence</item>
+
+        /////Sports///////
+        <item>Cricket Field</item>
+        <item>Hockey Field</item>
+        <item>Tennis Court</item>
+        <item>Swimming Pool</item>
+    </string-array>
+    <string name="parkingSlotsPrompt">Please Select Your Parking Spot</string>
 </resources>
