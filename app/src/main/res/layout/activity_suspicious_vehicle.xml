@@ -28,13 +28,13 @@
             <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
                 android:id="@+id/suspiciousImageButton"
                 android:hint="upload image of the suspicious vehicle"
                 android:src="@drawable/camera"
                 android:scaleType="fitXY"
                 android:layout_below="@+id/suspiciousHeadingImage"
-                android:layout_centerHorizontal="true" />
+                android:layout_alignRight="@+id/suspiciousVehicleModel"
+                android:layout_alignEnd="@+id/suspiciousVehicleModel" />
 
             <Spinner
                 android:layout_width="wrap_content"
@@ -56,7 +56,9 @@
                 android:ems="10"
                 android:id="@+id/suspiciousVehicleModel"
                 android:layout_below="@+id/suspiciousVehicleType"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+                android:maxLength="20"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +66,8 @@
                 android:id="@+id/button"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/suspiciousRemarks" />
+                android:layout_below="@+id/suspiciousRemarks"
+                android:onClick="buttonOnClick2" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -74,7 +77,8 @@
                 android:layout_gravity="center_vertical"
                 android:scrollbars="vertical"
                 android:layout_below="@+id/suspiciousVehicleNumber"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:maxLength="20"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -84,7 +88,9 @@
                 android:id="@+id/suspiciousVehicleNumber"
                 android:layout_below="@+id/suspiciousVehicleModel"
                 android:layout_alignLeft="@+id/suspiciousVehicleModel"
-                android:layout_alignStart="@+id/suspiciousVehicleModel" />
+                android:layout_alignStart="@+id/suspiciousVehicleModel"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+                android:maxLength="20"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -98,6 +104,16 @@
                 android:layout_marginBottom="40dp"
                 android:background="#FFFF00"
                 android:adjustViewBounds="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse "
+                android:id="@+id/button2"
+                android:layout_marginBottom="23dp"
+                android:layout_above="@+id/suspiciousVehicleType"
+                android:layout_toLeftOf="@+id/button"
+                android:layout_toStartOf="@+id/button" />
 
 
         </RelativeLayout>

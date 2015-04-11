@@ -149,13 +149,13 @@
     <item>Choose Vehicle Type...</item>
 
     ////Gates//////
-    <item>Bicycle</item>
-        <item>Bike</item>
-        <item>Car</item>
-        <item>Truck</item>
-        <item>Courier</item>
-        <item>Auto</item>
-        <item>Other</item>
+    <item>bicycle</item>
+        <item>bike</item>
+        <item>car</item>
+        <item>truck</item>
+        <item>courier</item>
+        <item>auto</item>
+        <item>other</item>
     </string-array>
     <string-array name="parkingSpots">
         <item>Please Select Your Parking Spot</item>

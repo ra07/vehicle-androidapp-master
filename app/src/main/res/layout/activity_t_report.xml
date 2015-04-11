@@ -50,7 +50,9 @@
         android:id="@+id/theftName"
         android:layout_marginBottom="10dp"
         android:layout_below="@+id/theftHeading"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:digits="abcdefghijklmnopqrstuvwxyz"
+        android:maxLength="256" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -72,7 +74,9 @@
             android:id="@+id/theftVehicleModel"
             android:layout_below="@+id/theftVehicleType"
             android:layout_alignLeft="@+id/theftName"
-            android:layout_alignStart="@+id/theftName" />
+            android:layout_alignStart="@+id/theftName"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+            android:maxLength="20"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,7 +86,9 @@
             android:id="@+id/theftVehicleNumber"
             android:layout_below="@+id/theftVehicleModel"
             android:layout_alignLeft="@+id/theftName"
-            android:layout_alignStart="@+id/theftName" />
+            android:layout_alignStart="@+id/theftName"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+            android:maxLength="20"/>
         <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,7 +96,8 @@
         android:id="@+id/theftButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/theftRemarks" />
+        android:layout_below="@+id/theftRemarks"
+            android:onClick="buttonOnClick1" />
 
         <EditText
             android:layout_width="match_parent"
@@ -100,7 +107,8 @@
             android:layout_gravity="center_vertical"
             android:scrollbars="vertical"
             android:layout_below="@+id/theftTime"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:maxLength="20"/>
 
         <TextView
             android:layout_width="wrap_content"
