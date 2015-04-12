@@ -32,7 +32,7 @@ public class RestAPIRequest {
     public static final String login = "rest/api-token-auth/";
     public static final String theftReport = "rest/theft-report/";
     public static final String suspiciousVehicle= "rest/suspicious-vehicle/";
-
+    public static final String parkingSlot = "rest/parking-slot/";
 
     private URL _url;
     private List<NameValuePair> _data;

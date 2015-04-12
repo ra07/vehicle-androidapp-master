@@ -27,11 +27,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/parkingSpotsSpinner"
-        android:entries="@array/parkingSpots"
         android:prompt="@string/parkingSlotsPrompt"
         android:layout_below="@+id/parkingHeadingImage"
         android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true" />
+       <!-- android:entries="@array/parkingSpots"-->
+
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +41,8 @@
                 android:layout_centerHorizontal="true"
                 android:id="@+id/parkingSubmit"
                 android:layout_marginBottom="40dp"
-                android:text="Show"/>
+                android:text="Show"
+                android:onClick="buttonOnClick2" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

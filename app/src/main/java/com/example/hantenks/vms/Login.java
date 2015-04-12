@@ -173,22 +173,22 @@ int flag=0;
         alert.show();
     }
 
-    /*public void onBackPressed4() {
+    public void onBackPressed4() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setTitle("Alert Box");
-        builder.setMessage("Are you Sure To Submit!!");
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Something Went Wrong");
+        builder.setNegativeButton("Return", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                //if user pressed "yes", then he is allowed to exit from application
-                finish();
+                //if user select "No", just cancel this dialog and continue with app
+                dialog.cancel();
             }
         });
 
         AlertDialog alert = builder.create();
         alert.show();
-    }*/
+    }
 
     public static final Pattern EMAIL_ADDRESS
             = Pattern.compile(
@@ -269,8 +269,8 @@ int flag=0;
 
            }
             else {
-               //show authentication error
-               Log.d("LOGIN", "Authentication error");
+               onBackPressed4();
+
            }
 
         }
